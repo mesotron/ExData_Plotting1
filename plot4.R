@@ -6,7 +6,7 @@ d <- subset(data, data$Date=="1/2/2007" | data$Date=="2/2/2007")  #Date is in da
 
 # Plot the data, creating a png file with a transparent background, just like the example.
 
-png(file = "plot4.png", width = 504, height = 504, units = "px", bg = "transparent")
+png(file = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 
 datetime <- strptime(paste(d$Date, d$Time), "%d/%m/%Y %H:%M:%S")
 

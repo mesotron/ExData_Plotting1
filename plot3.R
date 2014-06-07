@@ -5,7 +5,7 @@ data<-read.table(zipped_data, header=T, sep=";", stringsAsFactors=F)
 d <- subset(data, data$Date=="1/2/2007" | data$Date=="2/2/2007")  #Date is in day/month/year format in this assignment
 
 # Plot the data, creating a png file with a transparent background, just like the example.
-png(file = "plot3.png", width = 504, height = 504, units = "px", bg = "transparent")
+png(file = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
 time <- strptime(paste(d$Date, d$Time), "%d/%m/%Y %H:%M:%S")
 
 plot(time, as.numeric(d$Sub_metering_1), type="l", xlab="", ylab="Energy sub metering")

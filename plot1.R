@@ -7,6 +7,6 @@ d <- subset(data, data$Date=="1/2/2007" | data$Date=="2/2/2007")  #Date is in da
 
 # Plot the data, creating a png file with a transparent background, just like the example.
 
-png(file = "plot1.png", width = 504, height = 504, units = "px", bg = "transparent")
+png(file = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
 hist(as.numeric(d$Global_active_power), breaks=12, freq=T, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
 dev.off()
